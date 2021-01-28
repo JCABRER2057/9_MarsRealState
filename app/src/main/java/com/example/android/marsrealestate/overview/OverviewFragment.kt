@@ -54,8 +54,8 @@ class OverviewFragment : Fragment() {
 
         // Giving the binding access to the OverviewViewModel
         binding.viewModel = viewModel
-        //TODO Set binding.photogrid.adapter to a new PhotoGripAdapter
-        //TODO Initialize PhotGripAdapter with an OnClickListenet that calls viewMOdel
+
+        /***TODO Initialize PhotGripAdapter with an OnClickListenet that calls viewMOdel**/
         binding.photosGrid.adapter = PhotoGridAdapter(PhotoGridAdapter.OnClickListener {
             viewModel.displayPropertyDetails(it)
         })
